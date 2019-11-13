@@ -1,19 +1,21 @@
 #write your code here
-number = 9 
-while number == 0 
-puts "#{number} SECOND(S)!"
-number -= 1
-end
 
 def countdown(number)
-number = 12
-while number == 0
+counter = number
+while number > 0
 puts "#{number} SECOND(S)!"
 number -= 1
-  puts "HAPPY NEW YEAR!" if number == number.count(12)
 end
+return "HAPPY NEW YEAR!"
 end
 
-def count_with_sleep(number)
-  5.seconds
+def countdown_with_sleep(number)
+  while number > 0 
+  puts "#{number} SECOND(S)!"
+  number -= 1
+  sleep(1)
 end
+
+return "HAPPY NEW YEAR!"
+end
+
